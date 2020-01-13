@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Project1
 //
-//  Created by Ryan Spishock on 10/15/19.
-//  Copyright © 2019 Ryan Spishock. All rights reserved.
+//  Created by Ryan Spishock on 1/10/20.
+//  Copyright © 2020 Ryan Spishock. All rights reserved.
 //
 
 import UIKit
@@ -24,14 +24,14 @@ class ViewController: UITableViewController {
         
         for item in items {
             if item.hasPrefix("nssl") {
-                // this is a picture to load
+                // This is a picture to load
                 pictures.append(item)
             }
-        } 
+        }
         
         print(pictures)
     }
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pictures.count
     }
